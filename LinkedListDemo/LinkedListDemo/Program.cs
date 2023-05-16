@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace LinkedListDemo
 {
@@ -14,7 +15,7 @@ namespace LinkedListDemo
             Console.WriteLine("select the following");
             Console.WriteLine("1.Add element to linked list.\n2.Add element in reverse.\n3.Remove First Element\n4.Remove last element" +
                 "\n5.Size of LinkedList \n6.create linkedlist. \n7.Queue adding value. \n8.Queue with linked list." +
-                "\n9.Add Elements to Stack. ");
+                "\n9.Add Elements to Stack. \n10.StackExample Node \n11.Linkedlsit Sorting.");
             int num=Convert.ToInt32(Console.ReadLine());
             switch (num)
             {
@@ -70,6 +71,21 @@ namespace LinkedListDemo
             case 9:
                     StackExample stack=new StackExample();
                     stack.StackMethod();
+                    break;
+            case 10:
+                    StackExampleNode name = new StackExampleNode();
+                    name.PushNode(90);
+                    name.PushNode(30);
+                    name.PushNode(40);
+                    name.PeekNode();
+                    name.PopNode();
+                    name.Display();
+                    break;
+                case 11:
+                    list.Sorting(30);
+                    list.Sorting(20);
+                    list.Sorting(50);
+                    list.ToDisplay();
                     break;
 
                 default:

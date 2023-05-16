@@ -51,6 +51,7 @@
     <Compile Include="QueueExample.cs" />
     <Compile Include="QueueWithNode.cs" />
     <Compile Include="StackExample.cs" />
+    <Compile Include="StackExampleNode.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
