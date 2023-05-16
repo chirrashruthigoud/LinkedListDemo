@@ -13,7 +13,7 @@ namespace LinkedListDemo
             LinkedListNode list = new LinkedListNode();
             Console.WriteLine("select the following");
             Console.WriteLine("1.Add element to linked list.\n2.Add element in reverse.\n3.Remove First Element\n4.Remove last element" +
-                "\n5.Size of LinkedList ");
+                "\n5.Size of LinkedList \n6.create linkedlist. \n7.Queue adding value. ");
             int num=Convert.ToInt32(Console.ReadLine());
             switch (num)
             {
@@ -53,6 +53,11 @@ namespace LinkedListDemo
              case 6:
                     LinkedlistD linkedlistD = new LinkedlistD();
                     linkedlistD.LinkedlistMethod();
+                    break;
+            case 7:
+                QueueExample queue=new QueueExample();
+                    queue.QueueMethod();
+                    queue.QueueMethodGenerics();
                     break;
 
              default:
