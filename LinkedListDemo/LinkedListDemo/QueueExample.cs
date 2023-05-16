@@ -31,7 +31,7 @@ namespace LinkedListDemo
             Console.WriteLine(queue.Peek());
             Console.WriteLine(queue.Contains(15));
         }
-        public void QueueMethodGenerics()
+        public void QueueGenerics()
         {
             Queue<double> name = new Queue<double>();
             name.Enqueue(1.25);

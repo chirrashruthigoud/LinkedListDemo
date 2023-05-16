@@ -57,7 +57,7 @@ namespace LinkedListDemo
             case 7:
                 QueueExample queue=new QueueExample();
                     queue.QueueMethod();
-                    queue.QueueMethodGenerics();
+                    queue.QueueGenerics();
                     break;
 
              default:
